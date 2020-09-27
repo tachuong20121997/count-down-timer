@@ -20,6 +20,8 @@ body {
 .countdown-container {
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 h1 {
@@ -37,4 +39,26 @@ h1 {
 
 .countdown-container span {
     font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .big-text {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .big-text {
+        font-size: 20px;
+    }
+
 }
